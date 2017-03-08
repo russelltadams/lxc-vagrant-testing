@@ -8,7 +8,7 @@ Testing using lxc with vagrant...
 4. install lxc vagrant plugin - "sudo vagrant plugin install vagrant-lxc"
 
 # open 3 terminals:
-1. run in term 1 "sudo lxc-ls --fancy" will list running container and there state and IP
+1. run in term 1 "sudo watch -n .5 lxc-ls --fancy" will list running container and there state and IP, etc...
 2. run in term 2 "sudo lxc-top" will list contain CPU and MEM and some IO usage
 3. run in term 3 "vagrant lxc sudoers" then "vagrant up" ("vagrant lxc sudoers" will put vagrant in sudo as a workaround having to provide sudo password all the time, this is a lxc provider issue)
 
